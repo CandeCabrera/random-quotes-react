@@ -16,9 +16,9 @@
 .box{
   width: 500px;
   padding: 20px;
-  background-color: #888;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0.1px 0.1px 10px #4e4e4e;
+  box-shadow: 0.1px 0.1px 10px #888;
 }
 
 .quoteBox{
@@ -34,13 +34,11 @@ display: flex;
   position: relative;
   top: -40px;
   left: -15px;
-  /* background: white; */
   font-size: 130px;
-  text-shadow: 0.1px 0.1px 10px #696969;
+  text-shadow: 0.1px 0.1px 5px #888;
 }
 
 .quote{
-  /* background-color: coral; */
   min-height: 90px;
   width: 400px;
   display: flex;
@@ -48,29 +46,27 @@ display: flex;
   align-items: center;
   position: relative;
   top: -20px;
-  font-weight: 700;
-  text-shadow: 0.1px 0.1px 10px #343434;
-  font-size: 20px;
-  
+  font-weight: 200;
+  text-shadow: 0.3px 0.3px 1.5px #666;
+  font-size: 22px;
+  letter-spacing: 0.3px;
 }
 
 .author{
-  /* background-color: blueviolet; */
   width: 386px;
   text-align: right;
-  font-size: 22px;
-  text-shadow: 0.1px 0.1px 10px #696969;
-  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 0.3px 0.3px 1.5px #666;
+  font-weight: 600;
   margin-top: -20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: relative;
-  right: -114px;
+  right: -100px;
 }
 
 .nextContainer{
-  /* background: red; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -84,11 +80,11 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #888;
+  color: white;
   font-weight: bold;
   font-size: 18px;
-  box-shadow: 0.1px 0.1px 10px #696969;
-  text-shadow: 0.5px 0.5px 1px #696969;
+  box-shadow: 0.1px 0.1px 5px #888;
+  text-shadow: 1.5px 0.5px 2px #888;
 
 }
 
@@ -109,7 +105,6 @@ display: flex;
     top: -20px;
     left: 0px;
     font-size: 110px;
-    text-shadow: 0.1px 0.1px 1px #888;
   }
 
   .quote{
@@ -121,10 +116,12 @@ display: flex;
 
   .author{
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: -30px;
     text-align: center;
-    right: 0px;
+    right: 15px;
   }
 }
+
+
 

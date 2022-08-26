@@ -12,8 +12,8 @@ function App() {
   const nextQuote = ()=>{
     setIndex(Math.floor(Math.random()* quotes.length))
   }
-  
-  const colors = ['#fdcae1', '#fdfd96', '#77dd77', '#84b6f4', '#d8f8e1','#fcb7af', '#fcb7af', '#ffe4e1', '#bc98f3',  '#d8f79a', '#d8f79a', '#f6d1de', '#a6fab6', '#fadc9b' ]
+  const colors = ['#f3adcc', '#e8e87d', '#77dd77', '#97bdec', '#77e8d0','#fcb7af', '#c5a8f0',  '#c8f383', '#f4f465', '#98e6a7', '#fadc9b', '#fa9b9b', '#88e3c6', '#88bce3', '#9988e3', '#c088e3', '#e79eeb', '#e388a6' ]
+
   const indexColor = Math.floor(Math.random()* colors.length)
 
 
