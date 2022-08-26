@@ -10,24 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .box{
   width: 500px;
   padding: 20px;
-  background-color: white;
+  background-color: #888;
   border-radius: 10px;
-  box-shadow: 0.1px 0.1px 10px #888;
+  box-shadow: 0.1px 0.1px 10px #4e4e4e;
 }
 
 .quoteBox{
   min-height: fit-content;
-  /* background-color: rgb(16, 40, 226); */
-  color: gray;
   position: relative; 
 }
 
@@ -41,7 +36,7 @@ display: flex;
   left: -15px;
   /* background: white; */
   font-size: 130px;
-  text-shadow: 0.1px 0.1px 1px #888;
+  text-shadow: 0.1px 0.1px 10px #696969;
 }
 
 .quote{
@@ -53,6 +48,9 @@ display: flex;
   align-items: center;
   position: relative;
   top: -20px;
+  font-weight: 700;
+  text-shadow: 0.1px 0.1px 10px #343434;
+  font-size: 20px;
   
 }
 
@@ -61,7 +59,7 @@ display: flex;
   width: 386px;
   text-align: right;
   font-size: 22px;
-  text-shadow: 0.1px 0.1px 1px #888;
+  text-shadow: 0.1px 0.1px 10px #696969;
   font-weight: bold;
   margin-top: -20px;
   display: flex;
@@ -86,14 +84,47 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #888;
   font-weight: bold;
   font-size: 18px;
-  box-shadow: 0.1px 0.1px 3px #888;
-  text-shadow: 0.1px 0.1px 2.5px #888;
+  box-shadow: 0.1px 0.1px 10px #696969;
+  text-shadow: 0.5px 0.5px 1px #696969;
+
 }
 
 .next:hover{
   cursor: pointer;
+}
+
+@media(max-width: 620px){
+  .box{
+    width: 70%;
+  }
+  .quoteBox > div {
+    flex-direction: column;
+  }
+
+  .quoteBox > div > i {
+    position: relative;
+    top: -20px;
+    left: 0px;
+    font-size: 110px;
+    text-shadow: 0.1px 0.1px 1px #888;
+  }
+
+  .quote{
+    width: 100%;
+    position: relative;
+    top: -40px;
+  
+  }
+
+  .author{
+    width: 100%;
+    font-size: 18px;
+    margin-top: -30px;
+    text-align: center;
+    right: 0px;
+  }
 }
 

@@ -5,7 +5,7 @@ const QuoteBox = ({ quote, author, color }) => {
         <div className='quoteBox'>
             <div>
             <i class="fa-solid fa-quote-left" style={{color:color}}></i>
-            <p className='quote'>{quote}</p>
+            <p className='quote' style={{color:color}}>{quote}</p>
             </div>
             <p className='author' style={{color:color}}>{author} </p>
 
