@@ -4,6 +4,7 @@ import './App.css'
 import quotes from './quotes.json'
 import QuoteBox from './components/QuoteBox'
 import NextBtn from './components/NextBtn'
+import Twitter from './components/Twitter'
 
 function App() {
 
@@ -28,9 +29,17 @@ function App() {
         author={quotes[index].author}
         color={colors[indexColor]}/>
         
-        <NextBtn
-        goNext={nextQuote}
-        color={colors[indexColor]}/>
+        <div className="btnContainer">
+          <NextBtn
+          goNext={nextQuote}
+          color={colors[indexColor]}/>
+  
+          <Twitter
+          quote={quotes[index].quote}
+          author={quotes[index].author}
+          color={colors[indexColor]}/>
+        </div>
+        
 
       </div>
       

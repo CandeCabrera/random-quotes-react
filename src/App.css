@@ -66,11 +66,17 @@ display: flex;
   right: -100px;
 }
 
+.btnContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .nextContainer{
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 5px;
 }
 
 .next{
@@ -90,6 +96,29 @@ display: flex;
 
 .next:hover{
   cursor: pointer;
+}
+
+.twitter{
+  width: 50%; 
+}
+ 
+a{
+  text-decoration: none;
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.1px 0.1px 5px #888;  
+}
+ 
+a > i{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  text-shadow: 1.5px 0.5px 2px #888;
 }
 
 @media(max-width: 620px){
